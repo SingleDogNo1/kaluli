@@ -1,0 +1,135 @@
+@keyframes move {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(35rpx);
+  }
+}
+
+@-webkit-keyframes move {
+  0% {
+    -webkit-transform: translateY(0);
+  }
+
+  100% {
+    -webkit-transform: translateY(35rpx);
+  }
+}
+
+.header {
+  padding-top: 130rpx;
+  height: 400rpx;
+  margin-bottom: 25rpx;
+  font-family:"微软雅黑",sans-serif; 
+}
+
+.header .bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.header .titlea, .header .titleb, .header .titlec {
+  text-align: center;
+  color: #f7f7f9;
+}
+
+.header .titlea {
+  line-height: 40rpx;
+  margin-bottom: 36rpx;
+}
+
+.header .titleb, .header .titlec {
+  font-size: 30rpx;
+  line-height: 30rpx;
+  margin-bottom: 15rpx;
+}
+
+.header .link {
+  background: blue;
+  width: 25rpx;
+  height: 50rpx;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 35rpx;
+  animation: move 3s linear infinite both;
+}
+
+.listbox {
+  padding: 0 20rpx;
+}
+
+.listbox .list {
+  height: 300rpx;
+  margin-bottom: 25rpx;
+  display: flex;
+  display: -webkit-flex;
+}
+
+.list .discount {
+  width: 40rpx;
+  height: 43rpx;
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 10rpx;
+  color: #f7f7f9;
+  font-size: 24rpx;
+  line-height: 43rpx;
+  text-align: center;
+}
+
+.list .discount image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+.list .goods {
+  width: 345rpx;
+  height: 100%;
+   
+}
+
+.list .desc {
+  width: 365rpx;
+  background: #fff;
+  padding: 35rpx 20rpx 0;
+  background:#fff -webkit-linear-gradient(135deg,#888888 0,#ffffff 20rpx);
+}
+
+.desc .title {
+  font-size: 32rpx;
+  color: #222;
+  line-height: 1.35;
+}
+
+.price .real {
+  color: #ff3000;
+  font-size: 30rpx;
+  margin-right: 15rpx;
+  line-height: 30rpx;
+
+}
+.price .original{
+    color:#b7b7b7;
+    font-size: 24rpx;
+    line-height: 30rpx;
+    text-decoration: line-through
+}
+.sell{
+    position: absolute;
+    bottom:25rpx;
+    left:20rpx;
+    color:#b7b7b7;
+    font-size: 24rpx;
+}

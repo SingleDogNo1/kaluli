@@ -1,0 +1,68 @@
+{
+    "pages": [        
+        
+        "pages/index/index",
+        "pages/course/list/list",
+        "pages/course/detail/detail",
+        "pages/coach/index/index",
+        "pages/coach/detail/detail",
+        "pages/coach/list/list",
+        "pages/experience/list/list",
+        "pages/experience/order/order",
+        "pages/experience/detail/detail",
+        "pages/experience/showorder/showorder",
+        "pages/mine/me/me",        
+        "pages/mine/aboutus/aboutus",
+        "pages/mine/userdata/userdata",
+        "pages/mine/myorder/myorder",        
+        "pages/mine/userinfo/userinfo",
+        "pages/mine/viparch/viparch",
+        "pages/mine/venue-mes/venue-mes"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#111",
+        "navigationBarTitleText": "卡路里国际健身工作室",
+        "backgroundColor": "#222235",
+        "navigationBarTextStyle": "white",
+        "enablePullDownRefresh": true
+    },
+    "tabBar": {
+        "color": "#b3b3b3",
+        "selectedColor": "#EAC931",
+        "backgroundColor": "#2C2E46",
+        "borderStyle": "black",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "img/__navi_01.png",
+                "selectedIconPath": "img/__navi_01_on.png"
+            },
+            {
+                "pagePath": "pages/experience/list/list",
+                "text": "预约体验",
+                "iconPath": "img/__navi_02.png",
+                "selectedIconPath": "img/__navi_02_on.png"
+            },
+            {
+                "pagePath": "pages/coach/index/index",
+                "text": "课程&教练",
+                "iconPath": "img/__navi_03.png",
+                "selectedIconPath": "img/__navi_03_on.png"
+            },
+            {
+                "pagePath": "pages/mine/me/me",
+                "text": "我的",
+                "iconPath": "img/__navi_04.png",
+                "selectedIconPath": "img/__navi_04_on.png"
+            }
+        ]
+    },
+    "networkTimeout": {
+        "request": 20000,
+        "connectSocket": 20000,
+        "uploadFile": 20000,
+        "downloadFile": 20000
+    }
+}

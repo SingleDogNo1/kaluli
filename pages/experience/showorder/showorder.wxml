@@ -1,0 +1,35 @@
+<view class="header">
+    <view class="name floor">
+        <text>{{msg.product_name}}</text>
+        <text>￥{{msg.amount_money}}</text>
+    </view>
+    <!--<view class="number floor">
+    <view class="name">购买数量</view>
+    <view class="length">
+        <view class="sub" bindtap="sub">-</view>
+        <view class="len">{{length}}</view>
+        <view class="add" bindtap="add">+</view>
+    </view>
+  </view>
+  <view class="total floor">
+    <text>共计</text>
+    <text>￥{{real*length}}</text>
+  </view>-->
+</view>
+
+<view class="msg">
+    <view class="desc">确认你的个人信息</view>
+    <view class="phone floor">
+        <view class="key">手机号码</view>
+        <view class="value">{{msg.mobile}}</view>
+    </view>
+    <view class="name floor">
+        <view class="key">姓名</view>
+        <view class="value">{{msg.realname}}</view>
+    </view>
+    <view class="sex floor">
+        <view class="key">性别</view>
+        <view class="value">{{msg.sex}}</view>
+    </view>
+</view>
+<button id="btn" bindtap="ling" type="primary" hover-class="none">领取卡券</button>

@@ -1,0 +1,155 @@
+/* pages/coach-mes/coach-mes.wxss */
+
+
+
+.banner{
+    width:100%;
+    height:400rpx;
+}
+.banner swiper{
+    width:100%;
+    height:100%;
+}
+swiper image{
+    width:100%;
+    height:100%;
+}
+.banner .page{
+    width:80rpx;
+    height:80rpx;
+    position: absolute;
+    left:23rpx;
+    bottom:32rpx;
+    background: #535353;
+    border-radius: 50%;
+    font-size: 24rpx;
+    color:#ffffff;
+    text-align: center;
+    line-height: 80rpx;
+}
+.page .current{
+    font-size: 30rpx;
+}
+
+
+.scroll{
+  width:100%;
+  height:100%;
+  background: #ededf2;
+}
+.coach_head{
+  width:100%;
+  height:450rpx;
+  position: relative;
+}
+.coach_head image{
+  position: absolute;
+  width:100%;
+  height:100%;
+  z-index:1;
+}
+.coach_head .coach_js{
+  width:100%;
+  position: absolute;
+ text-align: center;
+  bottom:22rpx;
+  z-index: 4;  
+}
+.coach_head .coach_js text{
+  font-size: 20rpx;
+  color:#333333;
+  display: inline-block;  
+  background: #ffe200;  
+  height:40rpx;
+  line-height: 40rpx;  
+  padding:0 26rpx;
+  border-radius: 23rpx;
+}
+.coach_js text.job{
+  margin-right: 8rpx;
+}
+.course_mes{
+  width:100%;
+  background: #fff;
+  padding:0 20rpx 15rpx;
+}
+.course_mes .name{
+  position: relative;
+  width:100%;
+  height:89rpx;
+  border-bottom:2rpx solid #efeff0;
+  line-height: 89rpx;
+  margin-bottom:28rpx;
+}
+.course_mes .name text{
+  font-size: 32rpx;
+  color:#222222;
+}
+.course_mes .name image.rz{
+  position: absolute;
+  left:110rpx;top:0;bottom:0;margin:auto;
+  width:120rpx;
+  height:32rpx;
+}
+.share::after{
+  display: none;
+}
+.share image{
+  position: absolute;
+  top:0;left:0;bottom:0;right:0;
+  margin:auto;
+  width:44rpx;
+  height:40rpx;
+  background: #fff;
+}
+.course_mes .name .share{
+  position: absolute;
+  right:0;top:0;bottom:0;margin:auto;
+  width:44rpx;
+  height:40rpx;
+  padding:0;
+}
+.lable{
+  display: inline-block;
+  padding:0 8rpx;
+  height:39rpx;
+  text-align: center;
+  line-height: 39rpx;
+  font-size: 23rpx;
+  border: 1rpx solid #dcdddd;
+  color:#777777;
+  border-radius: 6rpx;
+  margin-right: 16rpx;
+  margin-bottom: 16rpx;
+}
+.prize{
+  width:100%;
+  min-height: 500rpx;
+  background: #fff;
+  margin-top: 13rpx;
+  padding-top:8rpx;
+}
+.prize_title{
+  width:100%;
+  height:78rpx;
+  line-height: 78rpx;
+}
+.prize_title text:first-child{
+  display: inline-block;
+  width:16rpx;
+  height:16rpx;
+  background: #6c7eff;
+  margin-right: 10rpx;
+}
+.prize_title text:last-child{
+  color:#222222;
+}
+.peize_lists{
+  width:100%;
+  padding:0 48rpx;
+}
+.peize_lists text{
+  display: block;
+  color:#777777;
+  margin-bottom: 20rpx;
+}

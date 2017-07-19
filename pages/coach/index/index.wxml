@@ -1,0 +1,40 @@
+<!--index.wxml-->
+<view class="container">
+  <image src="/img/__course_bg.jpg" class="bg_img"></image>
+  <view class="mianMes">
+    <view class="main_word border">
+      <text>通过科学的训练指导、专业的力量训练</text>
+      <text>我们和您一起完成预期目标</text>
+    </view>
+    <view class="main_item">
+      <view class="course border">
+        <navigator url="/pages/course/list/list" hover-class="none">
+          <image src="/img/__course_icon01.png"></image>
+          <view class="left_mes">
+            <text class="title">精彩课程</text>
+            <text>根据您的<text class="yellow">身体情况</text>和<text class="yellow">预期目标</text>为您量身定制训练课程，避免运动损害和无效运动。</text>
+          </view>
+        </navigator>
+      </view>
+      <view class="coach border">
+        <navigator url="/pages/coach/list/list" hover-class="none">
+          <image src="/img/__course_icon02.png"></image>
+          <view class="left_mes">
+            <text class="title">专业教练</text>
+            <text>
+              <text class="yellow">国际健身认证</text>教练，丰富的肌肉塑形知识、熟知营养学知识和器械运动技巧。</text>
+          </view>
+        </navigator>
+      </view>
+      <view class="venue">
+        <navigator url="/pages/mine/venue-mes/venue-mes" hover-class="none">
+          <image src="/img/__course_icon03.png"></image>
+          <view class="left_mes">
+            <text class="title">场馆介绍</text>
+            <text>设施齐全，环境优雅，地理位置佳，周边交通齐全。</text>
+          </view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>

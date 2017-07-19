@@ -1,0 +1,23 @@
+<view class="header">
+    <image class="bg" src="/img/tab02_img.jpg"></image>
+    <view class="titlea">{{titlea}}</view>
+    <view class="titleb">{{titleb}}</view>
+    <view class="titlec">{{titlec}}</view>
+    <!--<view class="link"></view>-->
+</view>
+<view class="listbox">
+<view class="list" wx:for="{{product_list}}" id="{{item._id}}" bindtap="showDetail">
+    <view class="discount" wx:if="{{item.price < item.original_price}}">
+        <image src="/img/tab02_discount_icon.png"></image>
+    </view>
+    <image class="goods" src="{{item.logo}}"></image>
+    <view class="desc">
+        <view class="title">{{item.name}}</view>
+        <view class="price">
+            <text class="real">￥{{item.price}}</text>
+            <text class="original">￥{{item.original_price}}</text>
+        </view>
+        <view class="sell">已售：{{item.sales_count}}次</view>
+    </view>
+</view>
+</view>

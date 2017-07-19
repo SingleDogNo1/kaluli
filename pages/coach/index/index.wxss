@@ -1,0 +1,81 @@
+/**index.wxss**/
+text{
+    color:#fff;
+}
+.bg_img{
+  position: absolute;
+  display:block;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+}
+.mianMes{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  padding:0 22rpx;
+}
+.main_word{
+  width:100%;
+  height:195rpx;
+  text-align: center;
+  padding-top: 70rpx;
+}
+.border{
+  border-bottom:2rpx solid rgba(158,150,148,.5);  
+}
+navigator{
+  width:100%;
+  height:100%;
+}
+.main_word text{
+  display: block;
+}
+.course,.coach,.venue{
+  width:100%;
+  position: relative;
+  padding: 0 25rpx;
+  font-size: 0;
+}
+.yellow{
+  color:#ffe200;
+}
+.left_mes{
+  width:520rpx;
+  height:100%;
+  position: absolute;
+  top:0;
+  right:25rpx;
+  padding-top: 80rpx;
+}
+.title{
+  font-size: 34rpx;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10rpx;
+}
+.course{
+  height:298rpx;
+}
+.main_item image{
+  position: absolute;
+  top:0;
+  bottom:0;
+  margin:auto 0;
+  width:100rpx;
+  height:90rpx;
+}
+.coach{
+  height:278rpx;
+}
+.coach .left_mes{
+  padding-top: 70rpx;
+}
+.venue{
+  height:294rpx;
+}
+.venue .left_mes{
+  padding-top: 80rpx;
+}

@@ -1,0 +1,194 @@
+page{
+    background:#ededf2;
+}
+.banner{
+    width:100%;
+    height:750rpx;
+}
+.banner swiper{
+    width:100%;
+    height:100%;
+}
+swiper image{
+    width:100%;
+    height:100%;
+}
+.banner .page{
+    width:80rpx;
+    height:80rpx;
+    position: absolute;
+    left:23rpx;
+    bottom:32rpx;
+    background: #535353;
+    border-radius: 50%;
+    font-size: 24rpx;
+    color:#ffffff;
+    text-align: center;
+    line-height: 80rpx;
+}
+.page .current{
+    font-size: 30rpx;
+}
+
+/*banner结束*/
+.introduce{
+    /*height:190rpx;*/
+    background: #fdfdff;
+    padding:23rpx;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    margin-bottom: 25rpx;
+}
+.desc{
+    font-size: 28rpx;
+    color: #777777;
+    text-align: justify;
+}
+.pricebox{
+     display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+.price{
+    font-size: 22rpx;
+}
+.price .real{
+    color:#ff3000;
+    margin-right: 15rpx;
+}
+.price .real text{
+    font-size: 36rpx;
+}
+.price .original{
+    color:#a0a0a0;
+    text-decoration: line-through;
+}
+.sell{
+     font-size: 24rpx;
+     line-height: 54rpx;
+      color:#a0a0a0;
+}
+
+/*介绍结束*/
+.detail{
+    background: #fdfdff;
+    margin-bottom: 25rpx;
+}
+.detail .title{
+    font-size: 30rpx;
+    line-height: 100rpx;
+    border-bottom: 2px solid #f6f6f7; 
+    padding-left: 20rpx;
+    background:linear-gradient(#6c7eff,#6c7eff);
+    background-size: 15rpx 15rpx;
+    background-position: left center;
+    background-repeat:no-repeat; 
+}
+.list{
+    padding-top: 20rpx;
+}
+.project{
+    display: flex;
+    display: -webkit-flex;
+    padding:0 20rpx;
+    height:56rpx;
+}
+.project .name{
+    width:500rpx;
+    color:#222222;
+    font-size: 28rpx;
+    line-height: 56rpx;
+}
+.project .times{
+    color:#222222;
+    font-size: 28rpx;
+    width:90rpx;
+    line-height: 56rpx;
+}
+.project .price{
+    color:#222222;  
+    font-size: 28rpx;      
+    width:120rpx;
+    text-align: right;
+    line-height: 56rpx;
+}
+.project .price.red{
+    color:#ff3000;
+}
+.detail .warn{
+    font-size: 30rpx;
+    color:#222222;
+    line-height: 1.5;
+    padding:30rpx 20rpx;
+}
+/*套餐内容结束*/
+.tipbox{
+    background: #fdfdff;
+    margin-bottom: 100rpx;
+}
+.tipbox .title{
+    font-size: 30rpx;
+    line-height: 100rpx;
+    border-bottom: 2px solid #f6f6f7; 
+    padding-left: 20rpx;
+    background:linear-gradient(#6c7eff,#6c7eff);
+    background-size: 15rpx 15rpx;
+    background-position: left center;
+    background-repeat:no-repeat; 
+    margin-bottom: 20rpx;
+}
+.tip{
+    padding:0 20rpx;
+}
+.tip .head{
+    font-size: 30rpx;
+    color:#777777;
+    line-height:56rpx; 
+}
+.tip .date,.tip .desc{
+    line-height: 56rpx;
+    font-size: 28rpx;
+    color:#222222;
+}
+.tip .bg{
+    padding-left: 25rpx;
+    background: radial-gradient(#b5b5b6 6rpx, transparent 0)no-repeat;
+    background-size: 25rpx 25rpx;
+    background-position: top 16rpx left;
+}
+.applybox{
+    position: fixed;
+    bottom:0;
+    left:0;
+    z-index: 999;
+    width:100%;
+    height:100rpx;
+    padding-left: 20rpx;
+    background: #30314a;
+    color: #ffdb08;
+    font-size: 20rpx;
+    line-height: 100rpx;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6) ;
+    
+}
+.applybox text{
+    font-size: 36rpx;
+    line-height: 100rpx;
+}
+.apply{
+    position: absolute;
+    right: 0;
+    top:0;
+    width:240rpx;
+    height:100%;
+    color: #000000;
+    font-size: 30rpx;
+    line-height: 100rpx;
+    text-align: center;
+    background: linear-gradient(90deg,#ffdb08,#ffb307);
+}

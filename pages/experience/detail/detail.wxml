@@ -1,0 +1,56 @@
+<view class="banner">
+    <swiper autoplay="true" circular="true" bindchange="change">
+        <block wx:for="{{bannerImg}}" current="{{index}}">
+            <swiper-item>
+                <image src="{{item}}"></image>
+            </swiper-item>
+        </block>
+    </swiper>
+    <view class="page">
+        <text class="current">{{current}}</text>/
+        <text class="all">{{all}}</text>
+    </view>
+</view>
+<view class="introduce">
+<view class="desc">{{desc}}</view>
+<view class="pricebox">
+    <view class="price">
+        <text class="real">￥{{price}}</text>
+        <text class="original">￥{{original_price}}</text>
+    </view>
+    <view class="sell">已售：{{sales_count}}次</view>
+</view>
+</view>
+<view class="detail">
+<view class="title">套餐内容</view>
+<view class="list">
+    <view class="project" wx:for="{{combo}}">
+        <view class="name">{{item.content}}</view>
+        <view class="times">{{item.count}}</view>
+        <view class="price">￥{{item.price}}</view>
+    </view>
+    <view class="total project">
+        <view class="name"></view>
+        <view class="times">总价值</view>
+        <view class="price">￥{{total}}</view>
+    </view>
+    <view class="special project">
+        <view class="name"></view>
+        <view class="times">优惠价</view>
+        <view class="price red">￥{{price}}</view>
+    </view>
+</view>
+</view>
+
+<view class="tipbox">
+<view class="title">购买须知</view>
+<view class="tip">
+    <import src="/libs/wxParse/wxParse.wxml"/>
+    <template is="wxParse" data="{{wxParseData:html.nodes}}"/>
+</view>
+</view>
+<view class="applybox">
+￥
+<text>{{price}}</text>
+<view class="apply" bindtap="linkTo">立即购买</view>
+</view>

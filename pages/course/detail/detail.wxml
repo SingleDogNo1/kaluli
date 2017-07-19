@@ -1,0 +1,38 @@
+<view class="container">
+  <view class="scroll">
+    <view class="banner">
+      <swiper autoplay="true" circular="true" bindchange="change">
+        <block wx:for="{{tiyanMsg.imgs}}" current="{{index}}">
+          <swiper-item>
+            <image src="{{item}}"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+      <view class="page">
+        <text class="current">{{current}}</text>/
+        <text class="all">{{all}}</text>
+      </view>
+    </view>
+    <view class="course_mes">
+      <view class="course_title">
+        <text>减脂瘦身塑形健身私教一对一课程</text>
+        <button open-type="share" class="share">
+          <image src="/img/__share_icon.png"></image>
+        </button>
+      </view>
+      <view class="course_js">
+        <text> 帮助学员达到理想的健身目标：减脂、瘦身、塑形，塑造更完美身材，培养健康的生活方式。</text>
+      </view>
+    </view>
+    <view class="prize">
+      <view class="prize_title">
+        <text></text>
+        <text>详细介绍</text>
+      </view>
+      <view class="peize_lists">
+        <import src="/libs/wxParse/wxParse.wxml" />
+        <template is="wxParse" data="{{wxParseData:html.nodes}}" />
+      </view>
+    </view>
+  </view>
+</view>

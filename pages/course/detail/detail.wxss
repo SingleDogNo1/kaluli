@@ -1,0 +1,121 @@
+@import "/libs/wxParse/wxParse.wxss";
+.banner{
+    width:100%;
+    height:400rpx;
+}
+.banner swiper{
+    width:100%;
+    height:100%;
+}
+swiper image{
+    width:100%;
+    height:100%;
+}
+.banner .page{
+    width:80rpx;
+    height:80rpx;
+    position: absolute;
+    left:23rpx;
+    bottom:32rpx;
+    background: #535353;
+    border-radius: 50%;
+    font-size: 24rpx;
+    color:#ffffff;
+    text-align: center;
+    line-height: 80rpx;
+}
+.page .current{
+    font-size: 30rpx;
+}
+.scroll{
+  width:100%;
+  height:100%;
+  background: #ededf2;
+}
+.course_head{
+  width:100%;
+  height:445rpx;
+  position: relative;
+}
+.course_head image{
+  position: absolute;
+  width:100%;
+  height:100%;
+  z-index:1;
+}
+.course_mes{
+  width:100%;
+  background: #fff;
+  padding:0 20rpx 15rpx;
+}
+.course_mes .course_title{
+  position: relative;
+  width:100%;
+  height:105rpx;
+  line-height: 105rpx;
+}
+.course_mes .corse_title text{
+  font-size: 32rpx;
+  color:#222222;
+  font-weight: bold;
+}
+.course_mes .course_title image.rz{
+  position: absolute;
+  left:110rpx;top:0;bottom:0;margin:auto;
+  width:120rpx;
+  height:32rpx;
+}
+.share::after{
+  display: none;
+}
+.share image{
+  position: absolute;
+  top:0;left:0;bottom:0;right:0;
+  margin:auto;
+  width:44rpx;
+  height:40rpx;
+  background: #fff;
+}
+.share{
+  position: absolute;
+  right:0;top:0;bottom:0;margin:auto;
+  width:44rpx;
+  height:40rpx;
+  padding:0;
+}
+.course_js{
+  color:#777777;
+  margin-bottom: 16rpx;
+}
+.prize{
+  width:100%;
+  min-height: 500rpx;
+  background: #fff;
+  margin-top: 13rpx;
+  padding-top:8rpx;
+  padding-bottom: 30rpx;
+}
+.prize_title{
+  width:100%;
+  height:78rpx;
+  line-height: 78rpx;
+}
+.prize_title text:first-child{
+  display: inline-block;
+  width:16rpx;
+  height:16rpx;
+  background: #6c7eff;
+  margin-right: 10rpx;
+}
+.prize_title text:last-child{
+  color:#222222;
+}
+.peize_lists{
+  width:100%;
+  padding:0 26rpx;
+}
+.peize_lists text{
+  display: block;
+  color:#777777;
+  margin-bottom: 20rpx;
+}

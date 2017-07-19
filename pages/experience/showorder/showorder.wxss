@@ -1,0 +1,117 @@
+/* pages/showorder/showorder.wxss */
+
+page {
+    background: #f6f6f7;
+}
+
+.header {
+    background: #fdfdff;
+    margin-bottom: 18rpx;
+}
+
+.floor {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    padding: 0 23rpx;
+}
+
+.name {
+    height: 100rpx;
+    width: 100%;
+    border-bottom: 2rpx solid #f6f6f7;
+    font-size: 30rpx;
+    line-height: 98rpx;
+}
+
+.name text:last-child {
+    font-size: 24rpx;
+    color: #ff3000;
+    line-height: 98rpx;
+}
+
+.number {
+    height: 100rpx;
+    border-bottom: 2rpx solid #f6f6f7;
+}
+
+.number .name {
+    color: #a0a0a0;
+}
+
+.number .length {
+    width: 172rpx;
+    height: 52rpx;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    border: 1rpx solid #ddd;
+    margin-top: 24rpx;
+}
+
+.number .length view {
+    width: 50rpx;
+    background: #ddd;
+    color: #222;
+    font-size: 30rpx;
+    line-height: 50rpx;
+    text-align: center;
+}
+
+.number .length view:nth-child(2n) {
+    width: 70rpx;
+    background: #fff;
+    font-size: 20rpx;
+}
+
+.total {
+    height: 100rpx;
+}
+
+.total text {
+    line-height: 100rpx;
+}
+
+.total text:last-child {
+    color: #ff3000;
+}
+
+.msg {
+    background: #fdfdff;
+}
+
+.msg .desc {
+    font-size: 28rpx;
+    padding: 35rpx 0;
+    line-height: 1.5;
+    color: #a0a0a0;
+    border-bottom: 2px solid #f6f6f7;
+    padding-left: 23rpx;
+    background: linear-gradient(#6c7eff, #6c7eff);
+    background-size: 15rpx 15rpx;
+    background-position: left top 50rpx;
+    background-repeat: no-repeat;
+}
+
+.msg .phone, .msg .name, .msg .time, .msg .sex {
+    height: 90rpx;
+    padding: 0 23rpx;
+    line-height: 90rpx;
+    text-align: right;
+    color: #222;
+    font-size: 30rpx;
+}
+
+#btn {
+    width: 700rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    font-family: "微软雅黑";
+    margin: 20rpx auto 0;
+}
+
+#btn.got {
+    color: #666;
+}

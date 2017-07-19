@@ -1,0 +1,19 @@
+<!--pages/course/course.wxml-->
+<view class="container">
+    <navigator  url="/pages/course/detail/detail?_id={{item._id}}" hover-class="none" class="course_item" wx:for="{{course}}">
+      <image src="{{item.logo}}" class="main_img"></image>
+      <view class="course_mes">
+        <text class="title">{{item.name}}</text>
+        <text class="mian-mes">{{item.summary}}</text>
+        <view id="more">
+          <text class="more-mes">更多资料</text>
+          <image src="/img/__my_arrow_icon.png"></image>
+        </view>
+        <text class="triangle"></text>
+      </view>
+    </navigator>
+
+    
+
+   
+</view>

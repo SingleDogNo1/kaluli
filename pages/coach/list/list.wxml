@@ -1,0 +1,30 @@
+<!--pages/coach/coach.wxml-->
+<view class="container">
+  <view class="scroll_view">
+
+
+    <navigator url="/pages/coach/detail/detail?coachId={{item._id}}" hover-class="none" class="course_item" wx:for="{{coachList}}">
+      <view class="coach_img">
+        <image src="{{item.logo}}" class="main_img"></image>
+        <view class="coach_js">
+          <text class="employment_time">{{item.cert_state}}</text>
+        </view>
+      </view>
+      <view class="course_mes">
+        <view class="name">
+          <text class="name">{{item.name}}</text>
+          <image src="/img/__course_icon05.png"></image>
+        </view>
+        <text class="lable" wx:for="{{item.tags}}">{{item}}</text>
+        
+        <view id="more" >
+          <text class="more-mes">更多资料</text>
+          <image src="/img/__my_arrow_icon.png"></image>
+        </view>
+        <text class="triangle"></text>
+      </view>
+    </navigator>
+
+
+  </view>
+</view>

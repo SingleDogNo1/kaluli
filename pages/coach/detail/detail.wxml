@@ -1,0 +1,38 @@
+<!--pages/coach-mes/coach-mes.wxml-->
+<view class="container">
+  <view class="scroll">
+    <view class="banner">
+      <swiper autoplay="true" circular="true" bindchange="change">
+        <block wx:for="{{coachMsg.imgs}}" current="{{index}}">
+          <swiper-item>
+            <image src="{{item}}"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+      <view class="page">
+        <text class="current">{{current}}</text>/
+        <text class="all">{{all}}</text>
+      </view>
+    </view>
+    <view class="course_mes">
+      <view class="name">
+        <text>{{coachMsg.name}}</text>
+        <image src="/img/__course_icon05.png" class="rz"></image>
+        <button open-type="share" class="share">
+          <image src="/img/__share_icon.png"></image>
+        </button>
+      </view>
+      <text class="lable" wx:for="{{coachMsg.tags}}">{{item}}</text>
+    </view>
+    <view class="prize">
+      <view class="prize_title">
+        <text></text>
+        <text>曾荣获</text>
+      </view>
+      <view class="peize_lists">
+        <import src="/libs/wxParse/wxParse.wxml"/>
+	  <template is="wxParse" data="{{wxParseData:html.nodes}}"/>
+      </view>
+    </view>
+  </view>
+</view>
